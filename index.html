@@ -4,113 +4,43 @@
 <title>Make meme || Trollme</title>
 <meta charset="utf-8" >
 <style type="text/css">
-#canvas{
- margin-left:30px;
-}
-
-
-#division{
-width:380px;
-height:250px;
-float:right;
-margin-top:10px;
-margin-right:0px;
-
-}
-#uppertext{
-height:30px;
-}
-#bottomtext{
-height:30px;
-}
-#coolor{
-height:30px;
-}
-
-#sizee{
-height:30px;
-width:175px;
-}
-
-#scale{
-height:30px;
-width:175px;
-}
-#rotate{
-height:30px;
-width:175px;
-}
-
-
-div.scrollmenu {
-    
-    background-color:#58D68D;// #333;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-#download
-{
-    background-color: navy;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-	
-}
-
+#canvas{margin-left:30px;}
+#division{width:380px;height:250px;float:right;margin-top:10px;margin-right:0px;}
+#uppertext{height:30px;}
+#bottomtext{height:30px;}
+#coolor{height:30px;}
+#sizee{height:30px;width:175px;}
+#scale{height:30px;width:175px;}
+#rotate{height:30px;width:175px;}
+#download{background-color: navy;color: white;font-weight: bold;text-decoration: none;}
 </style>
-
 </head>
 <body>
-
 <div id="container">
 <div id="main61">
-  <div id="division"></br>
-  
-</br> </br> </br> </br>
+  <div id="division"></br></br> </br> </br> </br>
   &nbsp TOP TEXT: &nbsp  &nbsp &nbsp  &nbsp &nbsp <input id="uppertext" type="text"  cols="20" rows="10" placeholder="TOP TEXT" onkeyup="textis()"/>
-  </br>
-  </br>
-  
+  </br></br>
    &nbsp BOTTOM TEXT:   <input id="bottomtext" type="text" placeholder="BOTTOM TEXT" onkeyup="textis()"/>
-  
-   </br>
-   </br>
+   </br></br>
     &nbsp TEXT COLOR:   &nbsp  &nbsp <input id="coolor" class="jscolor" value="#128C3B" onchange="textis()">
-   
-   </br>
-   </br>
+   </br></br>
     &nbsp TEXT SIZE: &nbsp &nbsp &nbsp &nbsp <input type="number"  id="sizee" max="30" min="10"  value="20"  onchange="textis()">
-   
-   
-   </br>
-   </br>
+   </br></br>
    &nbsp ZOOM: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input id="scale" max="3" min="0.5" step="0.01" type="range" value="1" />
-  
- 
-  </br>
-  </br>
+  </br></br>
   &nbsp ROTATE:  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input id="rotate" max="180" min="-180" step="1" type="range" value="0" />
   </br> </br> </br> </br>
- 
    </div>
-   
    </br> </br>
-   
  <canvas id="canvas">
- 
  canvas is not supported by your browser
  </canvas>
  </br> 
  &nbsp &nbsp &nbsp <input id="fileInputt" type="file" accept="image/*" value="choose your file" /> &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp 
 <a id="download" download='https://www.facebook.com/Officialtrollme.png'><button type="button" onClick="download()">Download</button></a>
-
- </br>
- </br> </br>
-   
-  
-   
-   <script>
+ </br></br> </br>
+  <script>
 
 
 var can=document.getElementById("canvas");
